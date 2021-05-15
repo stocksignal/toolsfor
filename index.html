@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tools for Web Apps provides developers with various tools to help create awesome beautiful web apps.">
+    <title>Tools for Web Apps!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-card">
+        <div class="container-inner">
+            <div class="container">
+                <div class="header">
+                    <h1>Tools for<span> Web Apps</span></h1>
+                    <em>Want to add more tools ? <i class="fa fa-plus-square" aria-hidden="true"></i></em>
+                </div>
+
+                <div class="tools">
+                    <h3>What are you looking for?</h3>
+                    <ul>
+                        <li onclick="getdata(event);" value="colorsdata">Color Pickers</li>
+                        <li onclick="getdata(event);" value="fontdata">Fonts</li>
+                        <li onclick="getdata(event);" value="iconsdata">Icons and Illustrations</li>
+                        <li onclick="getdata(event);" value="photosdata">Photos and Videos</li>
+                        <li onclick="getdata(event);" value="miscdata">Dev tools</li>
+                        <li onclick="getdata(event);" value="hostingdata">Free Hosting</li>
+                    </ul>
+                </div>
+
+                <div class="toolsList">
+                </div>
+
+            </div>
+
+            <div class="container-back">
+                <div class="header">
+                    <h1>Tools for<span> Web Apps</span></h1>
+                    <p id="gobackbtn">Go back <i class="fa fa-arrow-left" aria-hidden="true"></i></p>
+                </div>
+                <div class="addtools">
+                    <h3>Add a tool which you think will help web developers!</h3>
+                    <div class="form">
+                        <input type="text" name="toolname" id="toolname" placeholder="Enter website name" required>
+                        <input type="text" name="tooldesc" id="tooldesc" placeholder="What does the website do?" required>
+                        <input type="text" name="toollink" id="toollink" placeholder="Link for the website"
+                            value="https://" required>
+                        <button value="Submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h5>Coded by <a href="https://sankethsj.github.io">Sanketh Jain</a></h5>
+        <p class="unsplash">Photo by <a
+                href="https://unsplash.com/@mohamadaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mohammad
+                alizade</a> on <a
+                href="https://unsplash.com/s/photos/landscapes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+
+
+</html>
